@@ -17,6 +17,7 @@
     brightnessctl
     carapace
     cliphist
+    dust
     ffmpeg
     ffmpegthumbnailer
     fzf

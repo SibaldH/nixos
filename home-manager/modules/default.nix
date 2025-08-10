@@ -11,6 +11,6 @@
     ./zsh.nix
     ./nushell
     ./neovim.nix
-    # ./hyprland
+    ./hyprland
   ];
 }

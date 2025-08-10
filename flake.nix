@@ -14,12 +14,12 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-                hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland";
 
-                neovim-flake = {
-                        url = "github:sibaldh/nvim-flake";
-                        inputs.nixpkgs.follows = "nixpkgs";
-                };
+    neovim-flake = {
+            url = "github:sibaldh/nvim-flake";
+            inputs.nixpkgs.follows = "nixpkgs";
+    };
 	};
 
 	outputs = { self, nixpkgs, home-manager, neovim-flake, hyprland, ...}@inputs: let
