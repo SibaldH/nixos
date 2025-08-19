@@ -4,7 +4,6 @@
     ./bluetooth.nix
     ./env.nix
     ./home-manager.nix
-    ./hyprland.nix
     ./kernel.nix
     ./mime.nix
     ./polkit.nix
@@ -14,6 +13,7 @@
     ./nix.nix
     ./timezone.nix
     ./user.nix
+    ./wm.nix
     ./zram.nix
   ];
 }
