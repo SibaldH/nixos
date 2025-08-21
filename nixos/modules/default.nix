@@ -9,6 +9,7 @@
     ./mime.nix
     ./polkit.nix
     ./ssh.nix
+    ./stylix.nix
     ./net.nix
     ./nh.nix
     ./nix.nix

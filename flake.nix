@@ -10,15 +10,15 @@
 		};
 
 		stylix = {
-			url = "github:danth/stylix/release-25.05";
+			url = "github:nix-community/stylix/release-25.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
     hyprland.url = "github:hyprwm/Hyprland";
 
     neovim-flake = {
-            url = "github:sibaldh/nvim-flake";
-            inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:sibaldh/nvim-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 	};
 
@@ -37,6 +37,7 @@
 				};
 
 				modules = [
+          inputs.stylix.nixosModules.stylix
 					./hosts/${hostname}/configuration.nix
 				];
 			};
