@@ -14,7 +14,7 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:fufexan/hyprland/nix-mold-optional";
 
     neovim-flake = {
             url = "github:sibaldh/nvim-flake";
