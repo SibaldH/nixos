@@ -1,10 +1,18 @@
-{ config, pkgs, inputs, ... }:{
+{ config, pkgs, inputs, ... }:
+let 
+  system = pkgs.stdenv.hostPlatform.system;
+in {
   programs.hyprland = {
     enable = true;
 		withUWSM = true;
     xwayland.enable = true;
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland.override { withMold = false; };
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    package = (inputs.hyprland.packages.${system}.hyprland.overrideAttrs (final: prev: {
+      buildInputs = prev.buildInputs ++ [
+        (inputs.hyprland.inputs.aquamarine.packages.${system}.aquamarine.override {withMold = false;})
+        (inputs.hyprland.inputs.hyprutils.packages.${system}.hyprutils.override {withMold = false;})
+      ];
+    })).override {withMold = false;}; 
+    portalPackage = inputs.hyprland.packages.${system}.xdg-desktop-portal-hyprland;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
