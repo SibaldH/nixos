@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 let 
   system = pkgs.stdenv.hostPlatform.system;
 in {
@@ -7,7 +7,7 @@ in {
 		withUWSM = true;
     xwayland.enable = true;
     package = (inputs.hyprland.packages.${system}.hyprland.overrideAttrs (final: prev: {
-      buildInputs = prev.buildInputs ++ [
+      buildInputs = (lib.lists.filter (e: e.pname != "aquamarine" || e.pname != "hyprutils") prev.buildInputs) ++ [
         (inputs.hyprland.inputs.aquamarine.packages.${system}.aquamarine.override {withMold = false;})
         (inputs.hyprland.inputs.hyprutils.packages.${system}.hyprutils.override {withMold = false;})
       ];
