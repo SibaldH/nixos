@@ -4,6 +4,7 @@
       isNormalUser = true;
       shell = pkgs.nushell;
       extraGroups = [ "wheel" "networkmanager" ];
+      initialPassword = "root";
     };
   };
 
