@@ -549,11 +549,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1756643773,
-        "narHash": "sha256-0TVZMPWXF3m/+rmbl3nrUR8f/Z4Regb1UF09K4apA9s=",
+        "lastModified": 1757171607,
+        "narHash": "sha256-Je3QUpoqxmogAaBSLvantgbBqe64pnhRiYUnLfyCdNE=",
         "owner": "sibaldh",
         "repo": "nvim-flake",
-        "rev": "487149ec2b0c2a84bbb2d544ac6542bdb6829913",
+        "rev": "ae9569698506a49a6bdced0c65752fb800c7104f",
         "type": "github"
       },
       "original": {
@@ -698,11 +698,11 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1757121405,
-        "narHash": "sha256-fU4gMpy9d11lVJSoBHKYFjH4vsssFnt3PXafUSJGxKY=",
+        "lastModified": 1757171372,
+        "narHash": "sha256-dUn+fCA6/7PxiBFBJ2Ghptnzd+cpscLTaEjUgkwJXSg=",
         "owner": "nix-community",
         "repo": "stylix",
-        "rev": "3b1842ce5e4de3d947815cb321a4af473c396510",
+        "rev": "1b2ca5c25c6120773a98151d1667e2945e4ff788",
         "type": "github"
       },
       "original": {
