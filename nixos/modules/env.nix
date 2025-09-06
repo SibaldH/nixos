@@ -6,6 +6,6 @@
 		PATH = [
 			"${XDG_BIN_HOME}"
 		];
-		NH_FLAKE = "/home/${user}/flake";
+		NH_FLAKE = "/home/${user}/nixos";
 	};
 }
