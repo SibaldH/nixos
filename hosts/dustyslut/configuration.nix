@@ -7,7 +7,7 @@
       ../../nixos/modules
     ];
 
-  networking.hostname = hostname;
+  networking.hostName = hostname;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
