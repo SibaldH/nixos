@@ -36,20 +36,9 @@
     unzip
     w3m
     wget
-    wl-clipboard
     wtype
     yt-dlp
     zip
-
-    # WM stuff
-    libsForQt5.xwaylandvideobridge
-    libnotify
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
-
-    # Polkit
-    polkit
-    hyprpolkitagent
 
     # Other
     bemoji
