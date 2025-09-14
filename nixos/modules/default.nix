@@ -5,6 +5,7 @@
     ./env.nix
     ./home-manager.nix
     ./kernel.nix
+    ./keyboard.nix
     ./mime.nix
     ./polkit.nix
     ./ssh.nix
