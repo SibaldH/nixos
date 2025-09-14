@@ -10,7 +10,7 @@
     ./stylix.nix
     ./zathura.nix
     ./zsh.nix
-    ./nushell
+    ./nushell.nix
     ./neovim.nix
   ];
 }
