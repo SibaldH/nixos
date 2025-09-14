@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ... }: {
   imports = [
     ./hyprland/monitor.nix
+    ./hyprland/keyboard.nix
   ];
   
   wayland.windowManager.hyprland = {
