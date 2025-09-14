@@ -3,7 +3,7 @@
 
   home.packages = with pkgs; [
     dejavu_fonts
-    jetbrains-mono
+    nerd-fonts.jetbrains-mono
     noto-fonts
     noto-fonts-lgc-plus
     texlivePackages.hebrew-fonts
@@ -41,7 +41,7 @@
       };
       monospace = {
         name = "JetBrainsMono Nerd Font";
-        package = pkgs.nerd-fonts.roboto-mono;
+        package = pkgs.nerd-fonts.jetbrains-mono;
       };
       sansSerif = {
         name = "Noto Sans";
