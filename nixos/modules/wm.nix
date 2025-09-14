@@ -7,6 +7,8 @@
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
+  programs.uwsm.enable = true;
+
   environment.systemPackages = with pkgs; [
     uwsm
     rofi-wayland
@@ -21,11 +23,13 @@
     xdg-desktop-portal-hyprland
     polkit
     hyprpolkitagent
+    evtest
+    kitty
   ];
 
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
   };
-  services.xserver.enable = false;
+  services.xserver.enable = true;
 }
