@@ -10,7 +10,7 @@
     mpv
     pavucontrol
     element-desktop
-    firefox
+    librewolf
 
     # CLI utils
     bc
