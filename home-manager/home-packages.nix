@@ -28,6 +28,8 @@
     grimblast
     htop
     hyprpicker
+    imagemagick
+    jq
     mediainfo
     microfetch
     playerctl
