@@ -2,6 +2,7 @@
   imports = [
     ./hyprland/monitor.nix
     ./hyprland/keyboard.nix
+    ./hyprland/scripts.nix
   ];
   
   wayland.windowManager.hyprland = {
