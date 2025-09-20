@@ -5,10 +5,12 @@
     ./hyprland/keyboard.nix
     ./hyprland/scripts.nix
     ./hyprland/hyprlock.nix
+    ./hyprland/hypridle.nix
   ];
 
   home.packages = with pkgs; [
     hyprlock
+    hypridle
   ];
   
   wayland.windowManager.hyprland = {
