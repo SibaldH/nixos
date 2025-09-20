@@ -11,6 +11,9 @@
     pavucontrol
     element-desktop
     librewolf
+    stremio
+    deepin.deepin-calculator
+    spotify
 
     # CLI utils
     bc
