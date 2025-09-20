@@ -14,6 +14,7 @@
     ./net.nix
     ./nh.nix
     ./nix.nix
+    ./pam.nix
     ./timezone.nix
     ./user.nix
     ./wm.nix
