@@ -3,31 +3,39 @@
     binds = {
       "$mainMod" = "SUPER";
       bind = [
+        # Applications
         "$mainMod, RETURN, exec, uwsm app -- alacritty"
         "$mainMod, B, exec, uwsm app -- librewolf"
 
+        # Windows
         "$mainMod, Q, killactive"
         "$mainMod, F, fullscreen"
         "$mainMod, T, togglefloating"
         "$mainMod, P, togglesplit"
         "$mainMod, O, swapsplit"
 
-        
+        # Actions
+        "$mainMod SHIFT, Q, exec, uwsm app -- hyprlock"
+
+        # Move focus with vim keys
         "$mainMod, h, movefocus, l"
         "$mainMod, l, movefocus, r"
         "$mainMod, k, movefocus, u"
         "$mainMod, j, movefocus, d"
 
+        # Move active window with SHIFT + vim keys
         "$mainMod SHIFT, h, movewindow, l"
         "$mainMod SHIFT, l, movewindow, r"
         "$mainMod SHIFT, k, movewindow, u"
         "$mainMod SHIFT, j, movewindow, d"
 
+        # Resize active window with CTRL + vim keys
         "$mainMod CTRL, h, resizeactive, -10 0" 
         "$mainMod CTRL, l, resizeactive, 10 0" 
         "$mainMod CTRL, k, resizeactive, 0 -10"
         "$mainMod CTRL, j, resizeactive, 0 10" 
 
+        # Fn keys
         ", XF86AudioRaiseVolume, exec, uwsm app -- volume inc"
         ", XF86AudioLowerVolume, exec, uwsm app -- volume dec"
         ", XF86AudioMute, exec, uwsm app -- volume mute"

@@ -4,6 +4,11 @@
     ./hyprland/keybinds.nix
     ./hyprland/keyboard.nix
     ./hyprland/scripts.nix
+    ./hyprland/hyprlock.nix
+  ];
+
+  home.packages = with pkgs; [
+    hyprlock
   ];
   
   wayland.windowManager.hyprland = {
