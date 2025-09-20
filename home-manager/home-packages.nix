@@ -31,6 +31,7 @@
     mediainfo
     microfetch
     playerctl
+    pulseaudio
     ripgrep
     silicon
     sudo-rs
