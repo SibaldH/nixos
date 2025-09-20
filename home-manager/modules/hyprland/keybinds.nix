@@ -43,6 +43,11 @@
         ", XF86AudioPause, exec, uwsm app -- playerctl pause"
         ", XF86AudioNext, exec, uwsm app -- playerctl next"
         ", XF86AudioPrev, exec, uwsm app -- playerctl previous"
+
+        # Printscreen
+        ", Print, exec, screenshot area"
+        "$mainMod, Print, exec, screenshot window"
+        "$mainMod SHIFT, Print, exec, screenshot monitor"
       ] ++ (
         # Workspaces: binds $mod + [shift +] {number row keys 1-0} to [move to] workspace {1-10}
         # Keys: code:10 (&/1), 11 (é/2), 12 ("/3), 13 ('/4), 14 ((/5), 15 (§/6), 16 (è/7), 17 (!/8), 18 (ç/9), 19 (à/0)

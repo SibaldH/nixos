@@ -8,7 +8,14 @@ let
     "notify-send" = "${pkgs.libnotify}/bin/notify-send";
     "brightnessctl" = "${pkgs.brightnessctl}/bin/brightnessctl";
     "bc" = "${pkgs.bc}/bin/bc";
-    # Add more mappings as needed, e.g., "grim" = "${pkgs.grim}/bin/grim";
+    "slurp" = "${pkgs.slurp}/bin/slurp";
+    "grim" = "${pkgs.grim}/bin/grim";
+    "convert" = "${pkgs.imagemagick}/bin/convert";
+    "swappy" = "${pkgs.swappy}/bin/swappy";
+    "wl-copy" = "${pkgs.wl-clipboard}/bin/wl-copy";
+    "wl-paste" = "${pkgs.wl-clipboard}/bin/wl-paste";
+    "hyprctl" = "${pkgs.hyprland}/bin/hyprctl";
+    "jq" = "${pkgs.jq}/bin/jq";
   };
 
   # Custom derivation for bundling multiple scripts
@@ -22,6 +29,13 @@ let
       libnotify     # For brightness.sh
       brightnessctl # For brightness.sh
       bc            # For brightness.sh
+      slurp         # For screenshot.sh
+      grim          # For screenshot.sh
+      imagemagick   # For screenshot.sh (magick)
+      swappy        # For screenshot.sh
+      wl-clipboard  # For screenshot.sh (wl-copy, wl-paste)
+      hyprland      # For screenshot.sh (hyprctl)
+      jq            # For screenshot.sh (jq)
     ];
 
     installPhase = ''
