@@ -8,6 +8,7 @@
     ./lazygit.nix
     ./ranger.nix
     ./stylix.nix
+    ./wlogout.nix
     ./zathura.nix
     ./zsh.nix
     ./nushell.nix
