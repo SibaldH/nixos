@@ -16,6 +16,8 @@ let
     "wl-paste" = "${pkgs.wl-clipboard}/bin/wl-paste";
     "hyprctl" = "${pkgs.hyprland}/bin/hyprctl";
     "jq" = "${pkgs.jq}/bin/jq";
+    "hyprlock" = "${pkgs.hyprlock}/bin/hyprlock";
+    "systemctl" = "${pkgs.systemd}/bin/systemctl";
   };
 
   # Custom derivation for bundling multiple scripts
@@ -36,6 +38,8 @@ let
       wl-clipboard  # For screenshot.sh (wl-copy, wl-paste)
       hyprland      # For screenshot.sh (hyprctl)
       jq            # For screenshot.sh (jq)
+      hyprlock      # For power.sh
+      systemd       # For power.sh (systemctl)
     ];
 
     installPhase = ''
