@@ -1,6 +1,7 @@
 {
   imports = [
     ./audio.nix
+    ./battery.nix
     ./bluetooth.nix
     ./env.nix
     ./home-manager.nix
