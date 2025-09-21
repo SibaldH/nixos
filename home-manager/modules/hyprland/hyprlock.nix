@@ -1,4 +1,8 @@
-{ config, pkgs, ... }:
+{ config, pkgs, user, ... }:
+let
+  colors = config.lib.stylix.colors;
+  mkColor = c: "rgb(${c})";
+in
 {
   programs.hyprlock = {
     enable = true;
@@ -11,7 +15,8 @@
       background = [
         {
           monitor = "";
-          path = "${pkgs.hyprland}/share/hyprland/hyprland.png";  # Or your wallpaper
+          path = "${config.stylix.image}";
+          blur_passes = 3;
         }
       ];
 
@@ -24,16 +29,16 @@
           dots_spacing = 0.15; # Scale of dots' absolute size
           dots_center = true;
           dots_rounding = -1; # Circle
-          outer_color = "rgb(151515)";
-          inner_color = "rgb(FFFFFF)";
-          font_color = "rgb(10, 10, 10)";
+          outer_color = mkColor colors.base03;
+          inner_color = mkColor colors.base07;
+          font_color = mkColor colors.base00;
           fade_on_empty = true;
           fade_timeout = 1000; # Milliseconds
           placeholder_text = "<i>Input Password...</i>";
           hide_input = false;
           rounding = -1; # Circle
-          check_color = "rgb(204, 136, 34)";
-          fail_color = "rgb(204, 34, 34)";
+          check_color = mkColor colors.base0A;
+          fail_color = mkColor colors.base08;
           fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
           fail_transition = 300; # ms
           capslock_color = -1;
@@ -48,24 +53,24 @@
       ];
 
       label = [
-        {
+        { # Clock
           monitor = "";
           text = "cmd[update:1000] echo \"$TIME\""; # Clock
-          color = "rgba(200, 200, 200, 1.0)";
+          color = mkColor colors.base05;
           font_size = 55;
-          font_family = "Fira Semibold";
+          font_family = "${config.stylix.fonts.sansSerif.name}";
           position = "-100, 70";
           halign = "right";
           valign = "bottom";
           shadow_passes = 5;
           shadow_size = 10;
         }
-        {
+        { # User
           monitor = "";
-          text = "$USER";
-          color = "rgba(200, 200, 200, 1.0)";
+          text = "${user}";
+          color = mkColor colors.base05;
           font_size = 20;
-          font_family = "Fira Semibold";
+          font_family = "${config.stylix.fonts.sansSerif.name}";
           position = "-100, 160";
           halign = "right";
           valign = "bottom";
@@ -77,11 +82,11 @@
       image = [
         {
           monitor = "";
-          path = "${config.home.homeDirectory}/.config/jay/cache/square_wallpaper.png";
+          path = "${config.stylix.image}";
           size = 280; # Lesser side if not 1:1
           rounding = -1; # Circle
           border_size = 4;
-          border_color = "rgb(221, 221, 221)";
+          border_color = mkColor colors.base06;
           rotate = 0; # Degrees, counter-clockwise
           reload_time = -1; # No reload
           position = "0, 200";
@@ -91,9 +96,4 @@
       ];
     };
   };
-
-  # Ensure Fira fonts are available
-  home.packages = with pkgs; [
-    fira  # Provides Fira Semibold
-  ];
 }
