@@ -1,24 +1,20 @@
 { pkgs, ... }: {
-  environment.systemPackages = with pkgs; [ glibcLocales ];
+  environment.systemPackages = with pkgs; [ glibcLocales glibc ];
 
   i18n = {
-    extraLocales = "all";
-    defaultLocale = "en_BE.UTF-8";
+    defaultLocale = "en_US.UTF-8";
     extraLocaleSettings = {
-      LANGUAGE = "en_BE.UTF-8";
-      LANG = "en_BE.UTF-8";
-      LC_TIME = "en_BE.UTF-8";
-      LC_NUMERIC = "en_BE.UTF-8";
-      LC_COLLATE = "en_BE.UTF-8";
-      LC_IDENTIFICATION = "en_BE.UTF-8";
-      LC_MONETARY = "en_BE.UTF-8";
-      LC_PAPER = "en_BE.UTF-8";
-      LC_ADDRESS = "en_BE.UTF-8";
-      LC_TELEPHONE = "en_BE.UTF-8";
-      LC_MEASUREMENT = "en_BE.UTF-8";
-      LC_NAME = "en_BE.UTF-8";
-      LC_CTYPE = "en_BE.UTF-8";
-      LC_MESSAGES = "en_BE.UTF-8";
+      LANGUAGE = "en_US.UTF-8";
+      LANG = "en_US.UTF-8";
+      LC_TIME = "nl_BE.UTF-8";
+      LC_NUMERIC = "nl_BE.UTF-8";
+      LC_IDENTIFICATION = "nl_BE.UTF-8";
+      LC_MONETARY = "nl_BE.UTF-8";
+      LC_ADDRESS = "nl_BE.UTF-8";
+      LC_TELEPHONE = "nl_BE.UTF-8";
+      LC_MEASUREMENT = "nl_BE.UTF-8";
+      LC_NAME = "nl_BE.UTF-8";
+      LC_MESSAGES = "en_US.UTF-8";
     };
   };
 }
