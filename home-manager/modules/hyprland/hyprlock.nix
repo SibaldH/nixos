@@ -2,6 +2,9 @@
 let
   colors = config.lib.stylix.colors;
   mkColor = c: "rgb(${c})";
+
+  img = config.stylix.image;
+  font = config.stylix.fonts.sansSerif.name;
 in
 {
   programs.hyprlock = {
@@ -15,7 +18,7 @@ in
       background = [
         {
           monitor = "";
-          path = "${config.stylix.image}";
+          path = "${img}";
           blur_passes = 3;
         }
       ];
@@ -58,7 +61,7 @@ in
           text = "cmd[update:1000] echo \"$TIME\""; # Clock
           color = mkColor colors.base05;
           font_size = 55;
-          font_family = "${config.stylix.fonts.sansSerif.name}";
+          font_family = "${font}";
           position = "-100, 70";
           halign = "right";
           valign = "bottom";
@@ -70,7 +73,7 @@ in
           text = "${user}";
           color = mkColor colors.base05;
           font_size = 20;
-          font_family = "${config.stylix.fonts.sansSerif.name}";
+          font_family = "${font}";
           position = "-100, 160";
           halign = "right";
           valign = "bottom";
@@ -82,7 +85,7 @@ in
       image = [
         {
           monitor = "";
-          path = "${config.stylix.image}";
+          path = "${img}";
           size = 280; # Lesser side if not 1:1
           rounding = -1; # Circle
           border_size = 4;
