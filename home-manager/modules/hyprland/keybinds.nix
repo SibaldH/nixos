@@ -6,6 +6,7 @@
         # Applications
         "$mainMod, RETURN, exec, uwsm app -- alacritty"
         "$mainMod, B, exec, uwsm app -- librewolf"
+        "$mainMod, E, exec, uwsm app -- hyprctl dispatch exec '[float; center; size 900 600] alacritty --title float_ranger -e ranger'"
 
         # Windows
         "$mainMod, Q, killactive"
@@ -16,6 +17,8 @@
 
         # Actions
         "$mainMod SHIFT, Q, exec, uwsm app -- hyprlock"
+        "$mainMod CTRL, Q, exec, uwsm app -- wlogout"
+        "$mainMod, SPACE, exec, uwsm app -- pkill rofi || uwsm app -- rofi -show drun -replace -i"
 
         # Move focus with vim keys
         "$mainMod, h, movefocus, l"
