@@ -9,11 +9,10 @@
     useXkbConfig = false; # use xkb.options in tty.
   };
 
-  # services.xserver = {
-  #   enable = true;
-  #   xkb = {
-  #     layout = "be";
-  #     variant = "latin1";
-  #   };
-  # };
+  services.xserver = {
+    enable = true;
+    xkb = {
+      layout = "be";
+    };
+  };
 }
