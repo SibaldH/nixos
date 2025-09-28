@@ -14,3 +14,4 @@ hosts -> host specific config
 ## TODOs
 - [ ] split-monitor-workspaces
 - [ ] fingerprint
+- [ ] limine bootloader
