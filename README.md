@@ -17,3 +17,4 @@ hosts -> host specific config
 - [ ] limine bootloader
 - [ ] dunst config
 - [ ] touchpad controlles
+- [ ] hyprpaper
