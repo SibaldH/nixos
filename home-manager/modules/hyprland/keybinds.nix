@@ -19,6 +19,7 @@
         "$mainMod SHIFT, Q, exec, uwsm app -- hyprlock"
         "$mainMod CTRL, Q, exec, uwsm app -- wlogout"
         "$mainMod, SPACE, exec, uwsm app -- pkill rofi || uwsm app -- rofi -show drun -replace -i"
+        "$mainMod ALT, C, exec, uwsm app -- split-grabroguewindows"
 
         # Move focus with vim keys
         "$mainMod, h, movefocus, l"
@@ -57,8 +58,8 @@
         builtins.concatLists (builtins.genList (i:
           let ws = i + 1;
           in [
-            "$mainMod, code:${toString (10 + i)}, workspace, ${toString ws}"
-            "$mainMod SHIFT, code:${toString (10 + i)}, movetoworkspace, ${toString ws}"
+            "$mainMod, code:${toString (10 + i)}, split-workspace, ${toString ws}"
+            "$mainMod SHIFT, code:${toString (10 + i)}, split-movetoworkspacesilent, ${toString ws}"
           ]
         ) 10)
       );

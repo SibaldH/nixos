@@ -16,6 +16,11 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
+    split-monitor-workspaces = {
+      url = "github:Duckonaut/split-monitor-workspaces";
+      inputs.hyprland.follows = "hyprland";
+    };
+
     neovim-flake = {
       url = "github:sibaldh/nvim-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,23 +49,23 @@
 				];
 			};
 			
-		in {
-			nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-				configs // {
-					"${host.hostname}" = makeSystem {
-						inherit (host) hostname stateVersion;
-					};
-				}) {} hosts;
-			
-			homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-				pkgs = nixpkgs.legacyPackages.${system};
-				extraSpecialArgs = {
-					inherit inputs homeStateVersion user;
-				};
+  in {
+    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
+      configs // {
+        "${host.hostname}" = makeSystem {
+          inherit (host) hostname stateVersion;
+        };
+      }) {} hosts;
+    
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs homeStateVersion user;
+      };
 
-				modules = [
-					./home-manager/home.nix
-				];
-			};
+      modules = [
+        ./home-manager/home.nix
+      ];
+    };
 	};
 }
