@@ -12,9 +12,10 @@ home-manager -> userwide config
 hosts -> host specific config
 
 ## TODOs
-- [ ] split-monitor-workspaces
+- [x] split-monitor-workspaces
 - [ ] fingerprint
 - [ ] limine bootloader
 - [ ] dunst config
 - [ ] touchpad controlles
 - [ ] hyprpaper
+- [ ] rofi config
