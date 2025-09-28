@@ -15,3 +15,4 @@ hosts -> host specific config
 - [ ] split-monitor-workspaces
 - [ ] fingerprint
 - [ ] limine bootloader
+- [ ] dunst config
