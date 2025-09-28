@@ -16,3 +16,4 @@ hosts -> host specific config
 - [ ] fingerprint
 - [ ] limine bootloader
 - [ ] dunst config
+- [ ] touchpad controlles
