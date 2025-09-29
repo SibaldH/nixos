@@ -4,6 +4,7 @@
     ./battery.nix
     ./bluetooth.nix
     ./env.nix
+    ./fingerprint.nix
     ./home-manager.nix
     ./kernel.nix
     ./keyboard.nix

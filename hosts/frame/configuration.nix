@@ -15,7 +15,8 @@
   boot.loader.grub.useOSProber = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  system.stateVersion = stateVersion;
+  services.fingerprint.enable = true;
 
+  system.stateVersion = stateVersion;
 }
 
