@@ -1,13 +1,4 @@
 { config, pkgs, inputs, ... }: {
-  imports = [
-    ./hyprland/monitor.nix
-    ./hyprland/keybinds.nix
-    ./hyprland/keyboard.nix
-    ./hyprland/scripts.nix
-    ./hyprland/hyprlock.nix
-    ./hyprland/hypridle.nix
-  ];
-
   home.packages = with pkgs; [
     hyprlock
     hypridle
@@ -30,4 +21,13 @@
       };
     };
   };
+  
+  imports = [
+    ./hyprland/monitor.nix
+    ./hyprland/keybinds.nix
+    ./hyprland/keyboard.nix
+    ./hyprland/scripts.nix
+    ./hyprland/hyprlock.nix
+    ./hyprland/hypridle.nix
+  ];
 }
