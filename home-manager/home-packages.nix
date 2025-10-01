@@ -13,6 +13,8 @@
     librewolf
     stremio
     spotify
+    anytype
+    logseq
 
     # CLI utils
     bc
