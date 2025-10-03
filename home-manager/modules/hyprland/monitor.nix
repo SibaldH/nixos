@@ -1,5 +1,5 @@
 {
   imports = [
-    ./monitors/home-flipped.nix
+    ./monitors/home.nix
   ];
 }
