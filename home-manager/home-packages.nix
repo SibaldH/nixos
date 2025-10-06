@@ -15,6 +15,7 @@
     spotify
     anytype
     logseq
+    discord
 
     # CLI utils
     bc
