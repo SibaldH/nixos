@@ -20,6 +20,7 @@
     # CLI utils
     bc
     brightnessctl
+    better-commits
     carapace
     cliphist
     dust
