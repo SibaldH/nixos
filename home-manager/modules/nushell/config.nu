@@ -891,6 +891,7 @@ alias cargo = cargo mommy
 alias deepseek = podman exec -it ollama ollama run deepseek-r1:14b --verbose
 alias ts = npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
 alias cat = bat
-alias nr = nix run .
+alias nr = nix run
+alias nd = nix develop
 
 run-external microfetch
