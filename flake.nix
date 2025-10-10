@@ -25,6 +25,11 @@
       url = "github:sibaldh/nvim-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    school-notes = {
+      url = "git+ssh://git@github.com/sibaldh/school-notes.git";
+      flake = false;  # This is a non-flake repository (just files)
+    };
 	};
 
 	outputs = { self, nixpkgs, home-manager, neovim-flake, hyprland, ...}@inputs: let
