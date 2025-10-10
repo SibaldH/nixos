@@ -12,5 +12,6 @@
     XDG_SESSION_TYPE = "wayland";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_DESKTOP = "Hyprland";
+    XDG_DATA_HOME = "$HOME/.local/share";
 	};
 }
