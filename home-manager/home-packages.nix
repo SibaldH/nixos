@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }: {
   nixpkgs.config.allowUnfree = true;
 
-  home.file.".local/share/typst/packages/local/school-notes".source = inputs.school-notes;
+  home.file.".local/share/typst/packages/local/school-notes/0.1.0".source = inputs.school-notes;
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
