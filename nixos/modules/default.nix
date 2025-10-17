@@ -1,10 +1,11 @@
-{
+{	
   imports = [
     ./audio.nix
     ./battery.nix
     ./bluetooth.nix
     ./env.nix
     ./fingerprint.nix
+    ./game.nix
     ./home-manager.nix
     ./kernel.nix
     ./keyboard.nix
