@@ -13,13 +13,13 @@ in {
     modules-left = [
       "hyprland/workspaces"
       "tray"
+      "hyprland/window"
     ];
     modules-center = [ "clock" ];
     modules-right = [
       "pulseaudio"
       "network"
       "battery"
-      "hyprland/language"
     ];
     clock = {
       calendar = {
@@ -46,6 +46,10 @@ in {
         sort-by-number = true;
       };
     };
+    "hyprland/window" = {
+      format = "<span font='11'>{initialClass}</span>";
+      icon = true;
+    };
     network = {
       format-wifi = "<span foreground='#${base0E}'> </span> {signalStrength}%";
       format-ethernet = "<span foreground='#${base0E}'>󰀂 </span>";
@@ -58,7 +62,7 @@ in {
       spacing = 8;
     };
     pulseaudio = {
-      format = "{icon} {volume}%";
+      format = "{icon}  {volume}%";
       format-muted = "<span foreground='#${base0D}'> </span> {volume}%";
       format-icons = {
         default = [ "<span foreground='#${base0D}'> </span>" ];
