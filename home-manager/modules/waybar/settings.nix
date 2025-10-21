@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 let
   colors = config.lib.stylix.colors;
 in {
@@ -56,6 +56,7 @@ in {
       tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
       format-linked = "{ifname} (No IP)";
       format-disconnected = "<span foreground='#${base0E}'>󰖪 </span>";
+      on-click = "${pkgs.alacritty}/bin/alacritty -e ${pkgs.networkmanager}/bin/nmtui";
     };
     tray = {
       icon-size = 20;
