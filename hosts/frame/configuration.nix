@@ -16,7 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   services.fingerprint.enable = true;
-  services.games.enable = true;
+  # services.games.enable = true;
 
   system.stateVersion = stateVersion;
 }
