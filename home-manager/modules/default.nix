@@ -8,6 +8,7 @@
     ./lazygit.nix
     ./ranger.nix
     ./stylix.nix
+    ./udiskie.nix
     ./waybar.nix
     ./wlogout.nix
     ./zathura.nix

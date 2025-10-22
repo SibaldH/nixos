@@ -20,6 +20,7 @@
     ./pam.nix
     ./timezone.nix
     ./user.nix
+    ./udisks2.nix
     ./wm.nix
     ./zram.nix
   ];

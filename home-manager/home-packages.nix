@@ -43,7 +43,6 @@
     silicon
     sudo-rs
     typst
-    udisks
     ueberzugpp
     unzip
     w3m
