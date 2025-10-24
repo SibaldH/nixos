@@ -18,6 +18,7 @@
     anytype
     logseq
     discord
+    whatsie
 
     # CLI utils
     bc
