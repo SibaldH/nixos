@@ -9,6 +9,7 @@
     ./home-manager.nix
     ./kernel.nix
     ./keyboard.nix
+    ./keyring.nix
     ./locales.nix
     ./mime.nix
     ./polkit.nix
