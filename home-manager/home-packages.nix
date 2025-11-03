@@ -19,6 +19,7 @@
     logseq
     discord
     whatsie
+    libreoffice
 
     # CLI utils
     bc
