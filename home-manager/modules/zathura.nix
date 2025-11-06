@@ -6,8 +6,5 @@
       d = "scroll half_down";
       u = "scroll half_up";
     };
-    options = {
-      font = "JetBrains Mono Bold 13";
-    };
   };
 }
