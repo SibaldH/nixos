@@ -20,6 +20,7 @@
     discord
     whatsie
     libreoffice
+    mixxx
 
     # CLI utils
     bc
