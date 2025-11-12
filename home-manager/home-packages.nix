@@ -20,7 +20,10 @@
     discord
     whatsie
     libreoffice
+
     mixxx
+    nicotine-plus
+    qbittorrent
 
     # CLI utils
     bc
