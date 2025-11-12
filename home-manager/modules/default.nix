@@ -7,6 +7,7 @@
     ./hyprland.nix
     ./lazygit.nix
     ./ranger.nix
+    ./rofi.nix
     ./stylix.nix
     ./udiskie.nix
     ./waybar.nix

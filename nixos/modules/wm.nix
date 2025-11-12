@@ -16,12 +16,10 @@
 
   environment.systemPackages = with pkgs; [
     uwsm
-    rofi-wayland
     waybar
     wayland-utils
     dunst
     libnotify
-    rofi-wayland
     wl-clipboard
     libsForQt5.xwaylandvideobridge
     xdg-desktop-portal-gtk
