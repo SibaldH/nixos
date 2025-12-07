@@ -2,15 +2,15 @@
 	description = "My System config";
 
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
 		home-manager = {
-			url = "github:nix-community/home-manager/release-25.05";
+			url = "github:nix-community/home-manager/release-25.11";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
 		stylix = {
-			url = "github:nix-community/stylix/release-25.05";
+			url = "github:nix-community/stylix/release-25.11";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
@@ -39,12 +39,12 @@
 
 	outputs = { self, nixpkgs, home-manager, neovim-flake, hyprland, ...}@inputs: let
 			system = "x86_64-linux";
-			homeStateVersion = "25.05";
+			homeStateVersion = "25.11";
 			user = "jay";
 			hosts = [
-				{ hostname = "nixy"; stateVersion = "25.05"; }
-				{ hostname = "dustyslut"; stateVersion = "25.05"; }
-				{ hostname = "frame"; stateVersion = "25.05"; }
+				{ hostname = "nixy"; stateVersion = "25.11"; }
+				{ hostname = "dustyslut"; stateVersion = "25.11"; }
+				{ hostname = "frame"; stateVersion = "25.11"; }
 			];
 
 			makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {

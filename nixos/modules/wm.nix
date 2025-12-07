@@ -21,7 +21,6 @@
     dunst
     libnotify
     wl-clipboard
-    libsForQt5.xwaylandvideobridge
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     polkit
