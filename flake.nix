@@ -26,6 +26,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     school-notes = {
       url = "git+ssh://git@github.com/sibaldh/school-notes.git";
       flake = false;  # This is a non-flake repository (just files)
