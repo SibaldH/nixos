@@ -58,8 +58,8 @@
         builtins.concatLists (builtins.genList (i:
           let ws = i + 1;
           in [
-            "$mainMod, code:${toString (10 + i)}, split-workspace, ${toString ws}"
-            "$mainMod SHIFT, code:${toString (10 + i)}, split-movetoworkspacesilent, ${toString ws}"
+            "$mainMod, code:${toString (10 + i)}, workspace, ${toString ws}"
+            "$mainMod SHIFT, code:${toString (10 + i)}, movetoworkspacesilent, ${toString ws}"
           ]
         ) 10)
       );

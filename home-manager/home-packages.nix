@@ -7,18 +7,14 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    anki
     imv
     mpv
     pavucontrol
     element-desktop
     librewolf
-    stremio
+    # stremio
     spotify
-    anytype
-    logseq
-    discord
-    whatsie
+    ferdium
     libreoffice
 
     mixxx
