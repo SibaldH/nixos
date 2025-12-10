@@ -6,6 +6,7 @@
     ./git.nix
     ./hyprland.nix
     ./lazygit.nix
+    ./quickshell.nix
     ./ranger.nix
     ./rofi.nix
     ./rust.nix

@@ -3,6 +3,7 @@
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
 		home-manager = {
 			url = "github:nix-community/home-manager/release-25.11";
@@ -34,6 +35,11 @@
     school-notes = {
       url = "git+ssh://git@github.com/sibaldh/school-notes.git";
       flake = false;  # This is a non-flake repository (just files)
+    };
+
+    caelestia-cli = {
+      url = "github:caelestia-dots/cli";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 	};
 
@@ -70,7 +76,7 @@
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
+        inherit inputs homeStateVersion user system;
       };
 
       modules = [

@@ -1,10 +1,12 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, system, ... }: {
   nixpkgs.config.allowUnfree = true;
 
   home.file.".local/share/typst/packages/local/school-notes/0.1.0".source = inputs.school-notes;
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
+
+    inputs.caelestia-cli.packages.${system}.default
 
     # Desktop apps
     imv
@@ -28,6 +30,7 @@
     carapace
     cliphist
     dust
+    disown
     ffmpeg
     ffmpegthumbnailer
     fzf
