@@ -12,6 +12,7 @@ in
     rustToolchain.default
 
     sccache
+    gcc
     bacon
     cargo-edit
     cargo-watch
