@@ -1,8 +1,6 @@
 { pkgs, inputs, ... }: {
   nixpkgs.config.allowUnfree = true;
 
-  home.file.".local/share/typst/packages/local/school-notes/0.1.0".source = inputs.school-notes;
-
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
 
@@ -44,7 +42,6 @@
     ripgrep
     silicon
     sudo-rs
-    typst
     ueberzugpp
     unzip
     w3m
