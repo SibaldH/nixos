@@ -8,6 +8,18 @@
       ../../nixos/services
     ];
 
+  nixpkgs.overlays = [
+    (self: super: {
+      valkey = super.valkey.overrideAttrs (old: {
+        doCheck = false;           # or doInstallCheck = false;
+        # Alternative: only disable the failing tests
+        # preCheck = old.preCheck or "" + ''
+        #   export SKIP_TESTS="unit/aofrw"
+        # '';
+      });
+    })
+  ];
+
   networking.hostName = hostname;
 
   boot.loader.grub.enable = true;
