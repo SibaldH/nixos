@@ -10,6 +10,8 @@
     pavucontrol
     element-desktop
     librewolf
+    freecad
+    orca-slicer
     # stremio
     spotify
     ferdium
