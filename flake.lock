@@ -819,11 +819,19 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1778645807,
         "narHash": "sha256-yrT1U8nv8WjkaWCSyrUy5Z7yfWOgfs8gpXCflPEXG3g=",
         "owner": "nix-community",
         "repo": "stylix",
         "rev": "74488f3a26e8227eabbbb1e99019e255d2b11997",
+=======
+        "lastModified": 1778680496,
+        "narHash": "sha256-tUq1WASV0dHLv3j18log8V6Esq0NYkXuzNH2EHsstcg=",
+        "owner": "nix-community",
+        "repo": "stylix",
+        "rev": "fc5bec2e44678eeaa221d566d447a0257a884737",
+>>>>>>> 69612e4 (update flake)
         "type": "github"
       },
       "original": {
