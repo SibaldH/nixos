@@ -3,6 +3,7 @@
     ./audio.nix
     ./battery.nix
     ./bluetooth.nix
+    ./cups.nix
     ./env.nix
     ./home-manager.nix
     ./kernel.nix
