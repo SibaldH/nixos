@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }: {
   nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.permittedInsecurePackages = [
+  #   "qtwebengine-5.15.19"
+  # ];
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
@@ -12,10 +15,11 @@
     librewolf
     freecad
     orca-slicer
-    # stremio
+    stremio-linux-shell
     spotify
     ferdium
     libreoffice
+    onlyoffice-desktopeditors
 
     mixxx
     nicotine-plus
