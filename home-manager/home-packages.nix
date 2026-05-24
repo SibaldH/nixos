@@ -20,6 +20,7 @@
     ferdium
     libreoffice
     onlyoffice-desktopeditors
+    picard
 
     mixxx
     nicotine-plus
