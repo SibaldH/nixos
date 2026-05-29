@@ -26,6 +26,7 @@
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.device = "nodev";
   boot.loader.grub.useOSProber = true;
+  boot.loader.grub.configurationLimit = 2;
   boot.loader.efi.canTouchEfiVariables = true;
 
   services.fingerprint.enable = true;
