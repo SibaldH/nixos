@@ -1,3 +1,7 @@
-{
-        security.polkit.enable = true;
+{ pkgs, ...}: {
+  security.polkit.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    polkit
+  ];
 }

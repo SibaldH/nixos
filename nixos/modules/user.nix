@@ -3,7 +3,7 @@
     users.${user} = {
       isNormalUser = true;
       shell = pkgs.nushell;
-      extraGroups = [ "wheel" "networkmanager" "video" "input" ];
+      extraGroups = [ "wheel" "networkmanager" "video" "input" "dialout" "adbusers" ];
       initialPassword = "root";
     };
   };

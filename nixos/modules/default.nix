@@ -1,5 +1,6 @@
 {	
   imports = [
+    ./appimage.nix
     ./audio.nix
     ./battery.nix
     ./bluetooth.nix
@@ -19,8 +20,9 @@
     ./nix.nix
     ./pam.nix
     ./timezone.nix
-    ./user.nix
+    ./udev.nix
     ./udisks2.nix
+    ./user.nix
     ./wm.nix
     ./zram.nix
   ];
