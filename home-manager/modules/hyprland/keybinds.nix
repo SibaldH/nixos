@@ -12,8 +12,8 @@
         "$mainMod, Q, killactive"
         "$mainMod, F, fullscreen"
         "$mainMod, T, togglefloating"
-        "$mainMod, P, togglesplit"
-        "$mainMod, O, swapsplit"
+        # "$mainMod, P, togglesplit"
+        # "$mainMod, O, swapsplit"
 
         # Actions
         "$mainMod SHIFT, Q, exec, uwsm app -- hyprlock"
