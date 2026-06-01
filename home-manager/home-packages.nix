@@ -27,6 +27,7 @@
     qbittorrent
 
     # CLI utils
+    android-tools
     bc
     brightnessctl
     better-commits
@@ -51,6 +52,8 @@
     sudo-rs
     ueberzugpp
     unzip
+    usbutils
+    appimage-run
     w3m
     wget
     wtype
