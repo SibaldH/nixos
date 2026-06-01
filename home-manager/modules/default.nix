@@ -8,7 +8,6 @@
     ./lazygit.nix
     ./ranger.nix
     ./rofi.nix
-    ./rust.nix
     ./stylix.nix
     ./udiskie.nix
     ./waybar.nix
