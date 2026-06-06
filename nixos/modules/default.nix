@@ -13,6 +13,7 @@
     ./locales.nix
     ./mime.nix
     ./polkit.nix
+    ./qemu.nix
     ./ssh.nix
     ./stylix.nix
     ./net.nix
