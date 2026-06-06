@@ -25,6 +25,7 @@
     ./udisks2.nix
     ./user.nix
     ./wm.nix
+    ./ydotools.nix
     ./zram.nix
   ];
 }
